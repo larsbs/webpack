@@ -512,7 +512,14 @@
           "$ref": "#/definitions/common.arrayOfStringValues"
         },
         "plugins": {
-          "type": "array"
+          "anyOf": [
+            {
+              "type": "array"
+            },
+            {
+              "type": "object"
+            }
+          ]
         },
         "resolver": {},
         "symlinks": {
